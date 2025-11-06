@@ -12,6 +12,38 @@
     <link rel="shortcut icon" href="img/favicon.png" />
     <link rel="stylesheet" href="css/plugins.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .video-header {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .bg-video {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+
+      .header-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        z-index: -1;
+      }
+
+      .bg-video .caption {
+        position: relative;
+        z-index: 1;
+      }
+    </style>
   </head>
   <body>
     <!-- Preloader -->
@@ -219,8 +251,40 @@
     </aside>
     <!-- Main -->
     <div id="savoye-main">
-      <!-- Slider -->
       <header class="header slider-fade">
+        <div class="video-header">
+          <!-- The opacity on the video is made with "data-overlay-dark="number".You can change it using the numbers 0-9. -->
+          <div class="text-left item bg-video" data-overlay-dark="3">
+            <video autoplay muted loop playsinline class="header-video">
+              <source src="herovideo_1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="v-middle caption">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 mt-30">
+                    <div class="o-hidden">
+                      <h6>Lorem Ipsum</h6>
+                      <h1>Styling that gives spaces, their soul.</h1>
+                      <p>
+                        Elanze transforms homes, workplaces, and public spaces
+                        into timeless expressions of<br />
+                        elegance — through curated art, bespoke objects, and
+                        soulful details.
+                      </p>
+                      <a href="#" class="btn float-btn flat-btn"
+                        >Discover Elanze</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Slider -->
+      <header class="header slider-fade" style="display: none">
         <div class="owl-carousel owl-theme">
           <!-- The opacity on the image is made with "data-overlay-dark="number".You can change it using the numbers 0-9. -->
           <div
@@ -234,11 +298,12 @@
                   <div class="col-md-8 mt-30">
                     <div class="o-hidden">
                       <h6>Lorem Ipsum</h6>
-                      <h1>standard dummy</h1>
+                      <h1>Styling that gives spaces, their soul.</h1>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. <br />Lorem Ipsum has been the
-                        industry's standard dummy
+                        Elanze transforms homes, workplaces, and public spaces
+                        into timeless expressions of<br />
+                        elegance — through curated art, bespoke objects, and
+                        soulful details.
                       </p>
                       <a href="#" class="btn float-btn flat-btn"
                         >Discover Elanze</a
@@ -260,11 +325,12 @@
                   <div class="col-md-8 mt-30">
                     <div class="o-hidden">
                       <h6>Lorem Ipsum</h6>
-                      <h1>standard dummy</h1>
+                      <h1>Styling that gives spaces, their soul.</h1>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. <br />Lorem Ipsum has been the
-                        industry's standard dummy
+                        Elanze transforms homes, workplaces, and public spaces
+                        into timeless expressions of<br />
+                        elegance — through curated art, bespoke objects, and
+                        soulful details.
                       </p>
                       <a href="#" class="btn float-btn flat-btn"
                         >Discover Elanze</a
@@ -286,11 +352,12 @@
                   <div class="col-md-8 mt-30">
                     <div class="o-hidden">
                       <h6>Lorem Ipsum</h6>
-                      <h1>standard dummy</h1>
+                      <h1>Styling that gives spaces, their soul.</h1>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. <br />Lorem Ipsum has been the
-                        industry's standard dummy
+                        Elanze transforms homes, workplaces, and public spaces
+                        into timeless expressions of<br />
+                        elegance — through curated art, bespoke objects, and
+                        soulful details.
                       </p>
                       <a href="#" class="btn float-btn flat-btn"
                         >Discover Elanze</a
@@ -304,7 +371,7 @@
         </div>
       </header>
       <!-- Slider Services Box -->
-      <div class="slider-services-wrapper">
+      <!-- <div class="slider-services-wrapper">
         <div class="slider-box-content box-up clearfix">
           <div class="row no-gutters">
             <div class="col-md-3 offset-md-6">
@@ -353,13 +420,15 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- About -->
       <div class="about section-padding" id="about">
         <div class="container">
           <div class="row">
             <div class="col-md-7">
-              <div class="section-title">About Us</div>
+              <div class="section-title">
+                More than styling. A living story.
+              </div>
               <p>
                 At Elanze, we believe every space tells a story. Through curated
                 art, sculptures, textiles, installations, lighting, and greens,
@@ -371,32 +440,30 @@
                 the designer’s vision — never competing, always complementing.
                 Blending an international aesthetic with a deeply personal lens,
                 we craft environments that are elegant, timeless, and uniquely
-                yours
+                yours.
               </p>
 
               <ul>
-                Our Values
+                Core (Principles)
                 <li>
                   <span style="font-size: 1.2rem; margin-right: 8px">•</span>
-                  Elegance with Soul — True beauty lies in depth, not just
-                  surface.
+                  Individuality – every space deserves its own signature.
                 </li>
                 <li>
                   <span style="font-size: 1.2rem; margin-right: 8px">•</span>
-                  Personalization — Every space should reflect its owner’s
-                  identity.
+                  Curation – beyond trends, we choose what belongs to you.
                 </li>
                 <li>
                   <span style="font-size: 1.2rem; margin-right: 8px">•</span>
-                  Artistry — Each detail is a piece of living art.
+                  Elegance – refinement that is timeless and quietly powerful.
                 </li>
                 <li>
                   <span style="font-size: 1.2rem; margin-right: 8px">•</span>
-                  Harmony — We complement visions, never compete with them.
+                  Meaning – beauty infused with culture, memory, and intent.
                 </li>
                 <li>
                   <span style="font-size: 1.2rem; margin-right: 8px">•</span>
-                  Timelessness — We create spaces that endure beyond trends.
+                  Transformation – when styling becomes soul.
                 </li>
               </ul>
 
@@ -426,7 +493,10 @@
           <div class="row">
             <div class="col-md-4">
               <div class="square-flip">
-                <div class="square bg-img" data-background="img/services/1.jpg">
+                <div
+                  class="square bg-img"
+                  data-background="img/services/24.png"
+                >
                   <div
                     class="square-container d-flex align-items-end justify-content-end"
                   >
@@ -454,7 +524,7 @@
             </div>
             <div class="col-md-4">
               <div class="square-flip">
-                <div class="square bg-img" data-background="img/services/1.jpg">
+                <div class="square bg-img" data-background="img/services/3.png">
                   <div
                     class="square-container d-flex align-items-end justify-content-end"
                   >
@@ -483,19 +553,22 @@
             </div>
             <div class="col-md-4">
               <div class="square-flip">
-                <div class="square bg-img" data-background="img/services/1.jpg">
+                <div
+                  class="square bg-img"
+                  data-background="img/services/11.png"
+                >
                   <div
                     class="square-container d-flex align-items-end justify-content-end"
                   >
                     <div class="box-title text-vertical">
-                      <h4>Bespoke Art & Murals</h4>
+                      <h4>Bespoke Art & Decor</h4>
                     </div>
                   </div>
                   <div class="flip-overlay"></div>
                 </div>
                 <div class="square2">
                   <div class="square-container2">
-                    <h4>Bespoke Art & Murals</h4>
+                    <h4>Bespoke Art & Decor</h4>
                     <p>
                       Every wall has a story to tell. Through curated paintings
                       and custom murals, we infuse spaces with artistry that
@@ -511,7 +584,10 @@
             </div>
             <div class="col-md-4">
               <div class="square-flip">
-                <div class="square bg-img" data-background="img/services/1.jpg">
+                <div
+                  class="square bg-img"
+                  data-background="img/services/36.png"
+                >
                   <div
                     class="square-container d-flex align-items-end justify-content-end"
                   >
@@ -538,19 +614,22 @@
             </div>
             <div class="col-md-4">
               <div class="square-flip">
-                <div class="square bg-img" data-background="img/services/1.jpg">
+                <div
+                  class="square bg-img"
+                  data-background="img/services/26.png"
+                >
                   <div
                     class="square-container d-flex align-items-end justify-content-end"
                   >
                     <div class="box-title text-vertical">
-                      <h4>Textiles & Décor</h4>
+                      <h4>Drops</h4>
                     </div>
                   </div>
                   <div class="flip-overlay"></div>
                 </div>
                 <div class="square2">
                   <div class="square-container2">
-                    <h4>Textiles & Décor</h4>
+                    <h4>Drops</h4>
                     <p>
                       Textures shape emotions. From fabrics and weaves to
                       curated artisanal objects, our textile and décor styling
@@ -565,7 +644,7 @@
             </div>
             <div class="col-md-4">
               <div class="square-flip">
-                <div class="square bg-img" data-background="img/services/1.jpg">
+                <div class="square bg-img" data-background="img/services/2.png">
                   <div
                     class="square-container d-flex align-items-end justify-content-end"
                   >
@@ -739,24 +818,24 @@
           <div class="row savoye-project-items">
             <div class="col-md-6 single-item interior">
               <div class="savoye-project-wrap">
-                <a href="project-page.html"
-                  ><img src="img/projects/1.jpg" alt=""
+                <a href="projects-1.html"
+                  ><img src="img/projects/4.png" alt=""
                 /></a>
                 <div class="savoye-project-content">
                   <p>Architecture</p>
-                  <h3><a href="project-page.html">Bungalow Dark House</a></h3>
+                  <h3><a href="projects-1.html">Bungalow Dark House</a></h3>
                 </div>
               </div>
             </div>
             <div class="col-md-6 single-item exterior">
               <div class="savoye-project-wrap">
-                <a href="project-page.html"
-                  ><img src="img/projects/2.jpg" alt=""
+                <a href="projects-1.html"
+                  ><img src="img/projects/14.png" alt=""
                 /></a>
                 <div class="savoye-project-content">
                   <p>Architecture</p>
                   <h3>
-                    <a href="project-page.html"
+                    <a href="projects-1.html"
                       >Woodenist House<br />Lumberjack</a
                     >
                   </h3>
@@ -765,24 +844,24 @@
             </div>
             <div class="col-md-6 single-item interior">
               <div class="savoye-project-wrap">
-                <a href="project-page.html"
-                  ><img src="img/projects/3.jpg" alt=""
+                <a href="projects-1.html"
+                  ><img src="img/projects/7.png" alt=""
                 /></a>
                 <div class="savoye-project-content">
                   <p>Exterior Design</p>
-                  <h3><a href="project-page.html">Geometric Building</a></h3>
+                  <h3><a href="projects-1.html">Geometric Building</a></h3>
                 </div>
               </div>
             </div>
             <div class="col-md-6 single-item exterior">
               <div class="savoye-project-wrap">
-                <a href="project-page.html"
-                  ><img src="img/projects/4.jpg" alt=""
+                <a href="projects-1.html"
+                  ><img src="img/projects/10.png" alt=""
                 /></a>
                 <div class="savoye-project-content">
                   <p>Architecture</p>
                   <h3>
-                    <a href="project-page.html"
+                    <a href="projects-1.html"
                       >Arch Cloud Honna<br />Didenton Villa</a
                     >
                   </h3>
@@ -1029,7 +1108,7 @@
         <div
           class="section-padding banner-img valign bg-img bg-fixed"
           data-overlay-light="4"
-          data-background="img/slider/1.jpg"
+          data-background="img/homefooter.png"
         >
           <div class="container">
             <div class="row">

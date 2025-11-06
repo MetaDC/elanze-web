@@ -38,27 +38,25 @@
       <!-- Logo -->
       <div class="savoye-logo">
         <a href="index.html">
-          <img src="img/logo.png" class="logo-img" alt="" />
-          <h2>Elanze</h2>
+          <img src="img/elanze-logo.png" class="logo-img" alt="" />
+          <!-- <h2>Elanze</h2> -->
         </a>
       </div>
       <!-- Menu -->
       <nav class="savoye-main-menu">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li class="savoye-sub active">
-            <a href="#0">Projects</a>
-            <ul>
+          <li><a href="index.html#services">Services</a></li>
+          <li>
+            <a href="index.html#projects">Projects</a>
+            <!-- <ul>
               <li><a href="projects.html">Projects 1</a></li>
               <li><a href="projects2.html">Projects 2</a></li>
-              <li class="active">
-                <a href="project-page.html">Project Page</a>
-              </li>
-            </ul>
+              <li><a href="project-page.html">Project Page</a></li>
+            </ul> -->
           </li>
-          <li class="savoye-sub">
+          <!-- <li class="savoye-sub">
             <a href="#0">Pages</a>
             <ul>
               <li><a href="pricing.html">Pricing</a></li>
@@ -71,16 +69,16 @@
               <li><a href="404.html">404 Page</a></li>
               <li><a href="coming-soon.html">Coming Soon</a></li>
             </ul>
-          </li>
-          <li class="savoye-sub">
+          </li> -->
+          <!-- <li class="savoye-sub">
             <a href="#0">Blog</a>
             <ul>
               <li><a href="blog.html">Blog style 1</a></li>
               <li><a href="blog2.html">Blog style 2</a></li>
               <li><a href="post.html">Blog single</a></li>
             </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
+          </li> -->
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <!-- Menu social media -->
@@ -225,13 +223,13 @@
       <div
         class="banner-header section-padding valign bg-img bg-fixed"
         data-overlay-dark="4"
-        data-background="img/slider/1.jpg"
+        data-background="img/project-hero.png"
       >
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center caption mt-90">
               <h1>Project Page</h1>
-              <h5><a href="projects.html">Projects</a> / Project Page</h5>
+              <!-- <h5><a href="projects.html">Projects</a> / Project Page</h5> -->
             </div>
           </div>
         </div>
@@ -246,33 +244,54 @@
             <div class="col-md-8">
               <div class="row align-items-stretch savoye-photos">
                 <div class="col-md-12 items mb-30">
+                  <!-- <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    class="header-video"
+                    style="width: 100%; height: auto"
+                  >
+                    <source src="herovideo_1.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video> -->
                   <a
-                    href="img/slider/3.jpg"
+                    href="herovideo_1.mp4"
                     class="d-block savoye-photo-item"
                     data-caption="Project page"
                     data-fancybox="gallery"
                   >
-                    <img src="img/slider/3.jpg" alt="" class="img-fluid" />
+                    <video
+                      autoplay
+                      muted
+                      loop
+                      playsinline
+                      class="header-video"
+                      style="width: 100%; height: auto"
+                    >
+                      <source src="herovideo_1.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
                   </a>
                 </div>
                 <div class="col-md-6 items mb-30">
                   <a
-                    href="img/services/1.jpg"
+                    href="img/project1.png"
                     class="d-block savoye-photo-item"
                     data-caption="Project page"
                     data-fancybox="gallery"
                   >
-                    <img src="img/services/1.jpg" alt="" class="img-fluid" />
+                    <img src="img/project1.png" alt="" class="img-fluid" />
                   </a>
                 </div>
                 <div class="col-md-6 items mb-30">
                   <a
-                    href="img/services/2.jpg"
+                    href="img/project2.png"
                     class="d-block savoye-photo-item"
                     data-caption="Project page"
                     data-fancybox="gallery"
                   >
-                    <img src="img/services/2.jpg" alt="" class="img-fluid" />
+                    <img src="img/project2.png" alt="" class="img-fluid" />
                   </a>
                 </div>
               </div>
@@ -300,7 +319,7 @@
         </div>
       </div>
       <!-- Prev-Next Projects -->
-      <div class="projects-prev-next">
+      <!-- <div class="projects-prev-next">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -320,13 +339,13 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- Top Footer Banner -->
-      <div class="topbanner-footer">
+      <div class="topbanner-footer" id="contact">
         <div
           class="section-padding banner-img valign bg-img bg-fixed"
           data-overlay-light="4"
-          data-background="img/slider/1.jpg"
+          data-background="img/project-hero.png"
         >
           <div class="container">
             <div class="row">
