@@ -645,8 +645,8 @@ hr {
   text-transform: uppercase;
 }
 #savoye-aside .savoye-logo .logo-img {
-  width: 70%;
-  margin-bottom: 5px;
+  width: 80%;
+  /* margin-bottom: 5px; */
 }
 @media screen and (max-width: 768px) {
   #savoye-aside .savoye-logo {
@@ -1480,7 +1480,7 @@ body.offcanvas .savoye-nav-toggle {
   float: left;
 }
 .team .info {
-  margin-left: 140px;
+  /* margin-left: 140px; */
 }
 .team .info h6 {
   color: #272727;
@@ -1522,8 +1522,8 @@ body.offcanvas .savoye-nav-toggle {
 }
 .team .toright .info {
   margin-left: 0;
-  margin-right: 160px;
-  text-align: right;
+  /* margin-right: 160px; */
+  /* text-align: center; */
 }
 .team .toright .info .social a {
   margin-right: 0;
@@ -2018,7 +2018,7 @@ body.offcanvas .savoye-nav-toggle {
     padding-bottom: 30px;
   }
   .savoye-project-wrap {
-    padding: 15px;
+    padding: 20px;
   }
 }
 
